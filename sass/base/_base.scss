@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+:root {
+    --white: #FFFFFFD8;
+    --black: #181818;
+    --pink: linear-gradient(to right, #eb00a5, #eb00a5);
+    --light-orange: #eb00a5;
+    --dark-orange: #eb00a5;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%; //10px
+    @media only screen and (max-width: 1200px) {
+        font-size: 56.25%; // 9 px
+    }
+    @media only screen and (max-width: 1024px) {
+        font-size: 43.75%; // 7 px
+    }
+    @media only screen and (max-width: 768px) {
+        font-size: 31.25%; // 5px
+    }
+    @media only screen and (max-width: 480px) {
+        font-size: 25%; // 4px
+    }
+    @media only screen and (max-width: 300px) {
+        font-size: 18.75%; // 6px
+    }
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
+}

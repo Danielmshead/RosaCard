@@ -1,0 +1,163 @@
+//Base do layout
+.container {
+    max-width: 100%;
+    min-height: 150rem;
+}
+
+//Homepage
+.homepage {
+    height: 50rem;
+    color: var(#eb00a5);
+    background: linear-gradient( to bottom, #eb00a5 0%, #eb00a5 85%, #ffffffd8 85%, #ffffffd8 100%);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    @media only screen and (max-width: 480px) {
+        background: var(#eb00a5);
+        align-items: center;
+    }
+    &__title {
+        animation: moveInRight 1s ease-out;
+        padding: 0 0 10rem 8rem;
+        flex: 0 0 62.5%;
+        @media only screen and (max-width: 768px) {
+            padding: 0 0 10rem 6rem;
+            flex: 0 0 50%; // 5px
+        }
+        @media only screen and (max-width: 480px) {
+            align-self: center;
+            padding: 0 0 0 3rem;
+        }
+    }
+    &__image {
+        text-align: center;
+    }
+}
+
+.human-svg {
+    animation: moveInLeft 1s ease-out;
+    width: 42.5rem;
+    height: 42.5rem;
+    @media only screen and (max-width: 768px) {
+        width: 35rem;
+        height: 35rem;
+    }
+    @media only screen and (max-width: 480px) {
+        padding-left: 3.5rem;
+    }
+}
+
+//Digital Acoount
+.investments {
+    height: 40rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &__image {
+        text-align: center;
+        align-self: center;
+        justify-self: center;
+        flex: 0 0 35%;
+    }
+    &__title {
+        padding-right: 8rem;
+    }
+}
+
+.pig-svg {
+    background: var(#eb00a5);
+    border-radius: 50%;
+    width: 30rem;
+    height: 30rem;
+    @media only screen and (max-width: 480px) {
+        width: 22.5rem;
+        height: 22.5rem;
+    }
+}
+
+.presentation {
+    background-image: linear-gradient( to right, var(#eb00a5) 50%, var(#eb00a5));
+    height: 55rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10rem;
+    @media only screen and (max-width: 380px) {
+        padding: 0 5rem;
+    }
+    @media only screen and (max-width: 768px) {
+        gap: 2rem;
+    }
+    &__title {
+        flex: 0 0 50%;
+        padding-right: 2rem;
+    }
+    &__image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 15px;
+        width: 50rem;
+        height: 35rem;
+        background: var(#eb00a5);
+        @media only screen and (max-width: 600px) {
+            width: 50rem;
+            height: 32.5rem;
+        }
+        @media only screen and (max-width: 400px) {
+            width: 35rem;
+            height: 22rem;
+        }
+    }
+}
+
+.benefits {
+    height: 105rem;
+    margin-top: 5rem;
+    &__title {
+        text-align: center;
+        padding-top: 5rem;
+    }
+    &__image {
+        padding-top: 6rem;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    &__button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 5rem;
+        transition: all 0.3s ease-out;
+        &:hover {
+            cursor: pointer;
+            filter: brightness(85%);
+        }
+    }
+    &__wrapper {
+        margin-top: 5rem;
+        height: 50rem;
+        background: var(#eb00a5);
+        color: #eb00a5;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+.small-svg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 2rem;
+    height: 15rem;
+    width: 15rem;
+    &--icons {
+        width: 55%;
+        fill: var(--black);
+        margin-bottom: 1rem;
+    }
+}
